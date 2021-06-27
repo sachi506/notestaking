@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- use https://uigradients.com/#Terminal for gradient background images -->
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#" style="font-weight: 500; font-size: x-large; color: red;">TodoList</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><b>Home</b></a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" id="searchtxt" type="search" placeholder="Search"
+                        aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="container my-2">
+            <h2 style="color: wheat; font-weight: 500;">Hey Add Your Tasks</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title" style="margin-bottom: 15px;"><b>Add Tasks</b></h5>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Start Adding Your Tasks..."
+                            style="margin-bottom: 15px;" id="addtxt" required></textarea>
+
+                    </div>
+
+                    <button class="btn btn-primary" id="btnadd">Add Task</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h1 style="color: wheat;font-weight: 400;">
+            <center>
+                Your Tasks
+            </center></h1>
+        <hr>
+
+
+        <div id="notes" class="row container-fluid"> </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+            crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+    </body>
+
+</html>
